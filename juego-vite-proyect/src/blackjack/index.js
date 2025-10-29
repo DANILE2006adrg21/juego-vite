@@ -23,7 +23,7 @@ const divCartasComputadora = document.querySelector('#computadora-cartas');
 
 const puntosHTML = document.querySelectorAll('small');
 
- deck = crearDeck(tipos,especiales );
+deck = crearDeck(tipos,especiales );
 
 
 // Esta función me permite tomar una carta
@@ -122,7 +122,7 @@ btnNuevo.addEventListener('click', () => {
 
     console.clear();
     deck = [];
-    deck = crearDeck();
+    deck = crearDeck(tipos, especiales);
 
     puntosJugador     = 0;
     puntosComputadora = 0;
