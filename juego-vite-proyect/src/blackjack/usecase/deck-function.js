@@ -1,8 +1,17 @@
 import _ from 'underscore';
 
 
-// Esta función crea un nuevo deck
-export const crearDeck = (tiposDeCarta, tiposEspeciales) => { 
+/**
+ * @param {array} tiposDeCarta 
+ * @param {array} tiposEspeciales 
+ * @returns {array} retorna un nuevo deck de cartas 
+ */
+
+export const crearDeck = (tiposDeCarta, tiposEspeciales) => {
+    
+    if( !tiposDeCarta) throw new Error("tiposDeCarta es un arreglo obligatorio de string");
+    
+
     let deck = [];
 
     for( let i = 2; i <= 10; i++ ) {
